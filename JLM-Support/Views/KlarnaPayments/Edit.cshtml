@@ -1,0 +1,148 @@
+﻿@model JLM_Support.Models.Klarna.Payment
+
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Edit</h1>
+
+<h4>Payment</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+            <div class="form-group">
+                <label asp-for="Reference" class="control-label"></label>
+                <input asp-for="Reference" class="form-control" />
+                <span asp-validation-for="Reference" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="IncludeFee" class="control-label"></label>
+                <input asp-for="IncludeFee" class="form-control" />
+                <span asp-validation-for="IncludeFee" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ExcludeFee" class="control-label"></label>
+                <input asp-for="ExcludeFee" class="form-control" />
+                <span asp-validation-for="ExcludeFee" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Fee" class="control-label"></label>
+                <input asp-for="Fee" class="form-control" />
+                <span asp-validation-for="Fee" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Currency" class="control-label"></label>
+                <input asp-for="Currency" class="form-control" />
+                <span asp-validation-for="Currency" class="text-danger"></span>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="IsBooked" /> @Html.DisplayNameFor(model => model.IsBooked)
+                </label>
+            </div>
+            <div class="form-group">
+                <label asp-for="BookingDate" class="control-label"></label>
+                <input asp-for="BookingDate" class="form-control" />
+                <span asp-validation-for="BookingDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CreatedDate" class="control-label"></label>
+                <input asp-for="CreatedDate" class="form-control" />
+                <span asp-validation-for="CreatedDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="UserId" class="control-label"></label>
+                <select asp-for="UserId" class="form-control" asp-items="ViewBag.UserId"></select>
+                <span asp-validation-for="UserId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CapturedAt" class="control-label"></label>
+                <input asp-for="CapturedAt" class="form-control" />
+                <span asp-validation-for="CapturedAt" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="OrderId" class="control-label"></label>
+                <input asp-for="OrderId" class="form-control" />
+                <span asp-validation-for="OrderId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FortnoxInvoiceNumber" class="control-label"></label>
+                <input asp-for="FortnoxInvoiceNumber" class="form-control" />
+                <span asp-validation-for="FortnoxInvoiceNumber" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FortnoxPaymentNumber" class="control-label"></label>
+                <input asp-for="FortnoxPaymentNumber" class="form-control" />
+                <span asp-validation-for="FortnoxPaymentNumber" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FortNoxPaymentVoucherSeries" class="control-label"></label>
+                <input asp-for="FortNoxPaymentVoucherSeries" class="form-control" />
+                <span asp-validation-for="FortNoxPaymentVoucherSeries" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FortNoxPaymentVoucherNumber" class="control-label"></label>
+                <input asp-for="FortNoxPaymentVoucherNumber" class="form-control" />
+                <span asp-validation-for="FortNoxPaymentVoucherNumber" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Errors" class="control-label"></label>
+                <input asp-for="Errors" class="form-control" />
+                <span asp-validation-for="Errors" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PaymentReference" class="control-label"></label>
+                <input asp-for="PaymentReference" class="form-control" />
+                <span asp-validation-for="PaymentReference" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PurchaseCountry" class="control-label"></label>
+                <input asp-for="PurchaseCountry" class="form-control" />
+                <span asp-validation-for="PurchaseCountry" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="VatAmountOnFee" class="control-label"></label>
+                <input asp-for="VatAmountOnFee" class="form-control" />
+                <span asp-validation-for="VatAmountOnFee" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="VatAmountOnFeeCurrency" class="control-label"></label>
+                <input asp-for="VatAmountOnFeeCurrency" class="form-control" />
+                <span asp-validation-for="VatAmountOnFeeCurrency" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CaptureId" class="control-label"></label>
+                <input asp-for="CaptureId" class="form-control" />
+                <span asp-validation-for="CaptureId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MerchantReference1" class="control-label"></label>
+                <input asp-for="MerchantReference1" class="form-control" />
+                <span asp-validation-for="MerchantReference1" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MerchantReference2" class="control-label"></label>
+                <input asp-for="MerchantReference2" class="form-control" />
+                <span asp-validation-for="MerchantReference2" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ShortOrderId" class="control-label"></label>
+                <input asp-for="ShortOrderId" class="form-control" />
+                <span asp-validation-for="ShortOrderId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+                <a asp-action="Index" class="btn btn-primary">Back to List </a>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+

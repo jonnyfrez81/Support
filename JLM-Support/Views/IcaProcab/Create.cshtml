@@ -1,0 +1,97 @@
+﻿@model JLM_Support.Models.IcaProcab.TblSetting
+
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Create</h1>
+
+<h4>Ica</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="DatabaseId" class="control-label"></label>
+                <input asp-for="DatabaseId" class="form-control" />
+                <span asp-validation-for="DatabaseId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AuthorizationCode" class="control-label"></label>
+                <input asp-for="AuthorizationCode" class="form-control" />
+                <span asp-validation-for="AuthorizationCode" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Accesstoken" class="control-label"></label>
+                <input asp-for="Accesstoken" class="form-control" />
+                <span asp-validation-for="Accesstoken" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Companyname" class="control-label"></label>
+                <input asp-for="Companyname" class="form-control" />
+                <span asp-validation-for="Companyname" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Moms25" class="control-label"></label>
+                <input asp-for="Moms25" class="form-control" />
+                <span asp-validation-for="Moms25" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Moms12" class="control-label"></label>
+                <input asp-for="Moms12" class="form-control" />
+                <span asp-validation-for="Moms12" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Moms6" class="control-label"></label>
+                <input asp-for="Moms6" class="form-control" />
+                <span asp-validation-for="Moms6" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Moms0" class="control-label"></label>
+                <input asp-for="Moms0" class="form-control" />
+                <span asp-validation-for="Moms0" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Active" class="control-label"></label>
+                <input asp-for="Active" class="form-control" />
+                <span asp-validation-for="Active" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Voucherseries" class="control-label"></label>
+                <input asp-for="Voucherseries" class="form-control" />
+                <span asp-validation-for="Voucherseries" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="OreAdjAcc" class="control-label"></label>
+                <input asp-for="OreAdjAcc" class="form-control" />
+                <span asp-validation-for="OreAdjAcc" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MomsXml25" class="control-label"></label>
+                <input asp-for="MomsXml25" class="form-control" />
+                <span asp-validation-for="MomsXml25" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MomsXml12" class="control-label"></label>
+                <input asp-for="MomsXml12" class="form-control" />
+                <span asp-validation-for="MomsXml12" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MomsXml6" class="control-label"></label>
+                <input asp-for="MomsXml6" class="form-control" />
+                <span asp-validation-for="MomsXml6" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MomsXml0" class="control-label"></label>
+                <input asp-for="MomsXml0" class="form-control" />
+                <span asp-validation-for="MomsXml0" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+                <a asp-action="Index" class="btn btn-primary">Back to List</a>
+            </div>
+        </form>
+    </div>
+</div>

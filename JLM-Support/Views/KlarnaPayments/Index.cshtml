@@ -1,0 +1,47 @@
+﻿@model IEnumerable<JLM_Support.Models.Klarna.Payment>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<div class="col-12 border p-3">
+    <table id="DT_load" class="table table-striped table-bordered" style="width:100%">
+        <thead>
+            <tr>
+                @*<th>Reference</th>*@
+                @*<th>IncludeFee</th>
+                    <th>ExcludeFee</th>
+                    <th>Fee</th>*@
+                @*<th>Currency</th>*@
+                <th>Booked</th>
+                @*<th>BookingDate</th>
+                    <th>CreatedDate</th>*@
+                <th>CapturedAt</th>
+                <th>OrderId</th>
+                @*<th>FortnoxInvoiceNumber</th>
+                    <th>FortnoxPaymentNumber</th>
+                    <th>FortNoxPaymentVoucherSeries</th>
+                    <th>FortNoxPaymentVoucherNumber</th>*@
+                <th>Errors</th>
+                @*<th>PaymentReference</th>
+                    <th>PurchaseCountry</th>*@
+                @*<th>VatAmountOnFee</th>*@
+                @*<th>VatAmountOnFeeCurrency</th>
+                    <th>CaptureId</th>*@
+                <th>MerchantReference1</th>
+                @*<th>MerchantReference2</th>
+                    <th>ShortOrderId</th>*@
+                @*<th>User</th>*@
+                <th></th>
+            </tr>
+        </thead>
+    </table>
+</div>
+
+@section scripts{
+    <script src="~/js/KlarnaPayment.js"></script>
+}
+
+
+
+

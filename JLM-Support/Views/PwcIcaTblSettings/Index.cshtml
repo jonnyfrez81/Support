@@ -1,0 +1,35 @@
+﻿@model IEnumerable<JLM_Support.Models.PwcIca.TblSetting>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<p>
+    <a asp-action="Create" class="btn btn-primary">Create New</a>
+</p>
+
+
+<table id="DT_load" class="table table-striped table-bordered" style="width:100%">
+    <thead>
+        <tr>
+            @*<th>DatabaseId</th>*@
+            @*<th>AuthorizationCode</th>*@
+            @*<th>Accesstoken</th>*@
+            <th>Companyname</th>
+            <th>Moms25</th>
+            <th>Moms12</th>
+            <th>Moms6</th>
+            <th>Moms0</th>
+            <th>Active</th>
+            @*<th>Voucherseries</th>*@
+            <th></th>
+
+        </tr>
+    </thead>
+</table>
+
+
+@section scripts{
+    <script src="~/js/PwcIca.js"></script>
+}

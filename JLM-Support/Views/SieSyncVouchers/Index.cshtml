@@ -1,0 +1,27 @@
+﻿@model IEnumerable<JLM_Support.Models.SieSync.Voucher>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<table id="DT_load" class="table table-striped table-bordered" style="width:100%">
+    <thead>
+        <tr>
+            <th>Created</th>
+            @*<th>FortnoxId</th>*@
+            <th>Company</th>
+            <th>Email</th>
+            <th>FileName</th>
+            @*<th>FileId</th>
+                <th>AccessToken</th>
+                <th>Voucher1</th>*@
+            <th>VoucherNumber</th>
+            <th></th>
+        </tr>
+    </thead>
+</table>
+
+@section scripts{
+    <script src="~/js/SieSyncVouchers.js"></script>
+}

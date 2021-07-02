@@ -1,0 +1,74 @@
+﻿@model JLM_Support.Models.SieSync.VouchersQueue
+
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Detail</h1>
+
+<h4>VouchersQueue</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+            <div class="form-group">
+                <label asp-for="Created" class="control-label"></label>
+                <input asp-for="Created" class="form-control" />
+                <span asp-validation-for="Created" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FortnoxId" class="control-label"></label>
+                <input asp-for="FortnoxId" class="form-control" />
+                <span asp-validation-for="FortnoxId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Company" class="control-label"></label>
+                <input asp-for="Company" class="form-control" />
+                <span asp-validation-for="Company" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Email" class="control-label"></label>
+                <input asp-for="Email" class="form-control" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FileName" class="control-label"></label>
+                <input asp-for="FileName" class="form-control" />
+                <span asp-validation-for="FileName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FileId" class="control-label"></label>
+                <input asp-for="FileId" class="form-control" />
+                <span asp-validation-for="FileId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AccessToken" class="control-label"></label>
+                <input asp-for="AccessToken" class="form-control" />
+                <span asp-validation-for="AccessToken" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Voucher" class="control-label"></label>
+                <input asp-for="Voucher" class="form-control" />
+                <span asp-validation-for="Voucher" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Fail" class="control-label"></label>
+                <input asp-for="Fail" class="form-control" />
+                <span asp-validation-for="Fail" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FailMessage" class="control-label"></label>
+                <input asp-for="FailMessage" class="form-control" />
+                <span asp-validation-for="FailMessage" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+         
+                <a asp-action="Index" class="btn btn-primary">Back to List </a>
+            </div>
+        </form>
+    </div>
+</div>
+

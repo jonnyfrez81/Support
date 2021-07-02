@@ -1,0 +1,88 @@
+﻿@model JLM_Support.Models.Klarna.User
+
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Create</h1>
+
+<h4>User</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Id" class="control-label"></label>
+                <input asp-for="Id" class="form-control" />
+                <span asp-validation-for="Id" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Email" class="control-label"></label>
+                <input asp-for="Email" class="form-control" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="LastUpdate" class="control-label"></label>
+                <input asp-for="LastUpdate" class="form-control" />
+                <span asp-validation-for="LastUpdate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CreatedDate" class="control-label"></label>
+                <input asp-for="CreatedDate" class="form-control" />
+                <span asp-validation-for="CreatedDate" class="text-danger"></span>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="IsActive" /> @Html.DisplayNameFor(model => model.IsActive)
+                </label>
+            </div>
+            <div class="form-group">
+                <label asp-for="Reference" class="control-label"></label>
+                <input asp-for="Reference" class="form-control" />
+                <span asp-validation-for="Reference" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MaxDaysToProcess" class="control-label"></label>
+                <input asp-for="MaxDaysToProcess" class="form-control" />
+                <span asp-validation-for="MaxDaysToProcess" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="OrganisationName" class="control-label"></label>
+                <input asp-for="OrganisationName" class="form-control" />
+                <span asp-validation-for="OrganisationName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="OrganisationNumber" class="control-label"></label>
+                <input asp-for="OrganisationNumber" class="form-control" />
+                <span asp-validation-for="OrganisationNumber" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ContactFirstName" class="control-label"></label>
+                <input asp-for="ContactFirstName" class="form-control" />
+                <span asp-validation-for="ContactFirstName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ContactLastName" class="control-label"></label>
+                <input asp-for="ContactLastName" class="form-control" />
+                <span asp-validation-for="ContactLastName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AddInvoice" class="control-label"></label>
+                <input asp-for="AddInvoice" class="form-control" />
+                <span asp-validation-for="AddInvoice" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AddArticle" class="control-label"></label>
+                <input asp-for="AddArticle" class="form-control" />
+                <span asp-validation-for="AddArticle" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+                <a asp-action="Index" class="btn btn-primary" >Back to List</a>
+            </div>
+        </form>
+    </div>
+</div>
+
